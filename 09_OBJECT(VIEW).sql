@@ -142,8 +142,8 @@ SELECT * FROM VW_EMP;
 CREATE OR REPLACE VIEW VW_EMP(사원명, 연봉, 근무년수)
     AS (SELECT
                EMP_NAME
-             , SALARY * 12 AS "연봉"
-             , EXTRACT(YEAR FROM SYSDATE) - EXTRACT(YEAR FROM HIRE_DATE) AS "근무년수"
+             , SALARY * 12
+             , EXTRACT(YEAR FROM SYSDATE) - EXTRACT(YEAR FROM HIRE_DATE)
           FROM
                EMPLOYEE);
 
@@ -151,6 +151,17 @@ CREATE OR REPLACE VIEW VW_EMP(사원명, 연봉, 근무년수)
 -- DROP VIEW 뷰이름;
 
 ----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
